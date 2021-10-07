@@ -4,34 +4,27 @@
     public class findMinimum {
         public static void main(String args[]) throws IOException {
 
+
             Scanner sc = new Scanner(System.in);
-            int  n,l;
-            n = sc.nextInt();
-            int a[] = new int[n];
-            int b[] = new int[n];
-            int even[] = new int[n];
-            int odd[] = new int[n];
-            for (int i = 0; i < n; i++) {
-                l = sc.nextInt();
-                a[i] = l;
-            }
-            for(int i=0;i<n;i++){
-                b[i]=a[i];
-            }
-            for(int i=0;i<n;i++){
-                int x;
-                if(a[i]>a[i+1]){
-                    x=a[i];
-                    a[i]=a[i+1];
-                    a[i+1]=x;
+            int n, l, t;
+            t = sc.nextInt();
+            while (t-- != 0) {
+                int index = 0;
+                n = sc.nextInt();
+                int a[] = new int[n];
+                for (int i = 0; i < n; i++) {
+                    l = sc.nextInt();
+                    a[i] = l;
                 }
-                for(int j=0;j<n;j++){
-                    if(b[j]==a[0]){
-                        System.out.println(j);
+                int min = a[0];
+                for (int i = 0; i < n; i++) {
+                    if (min > a[i]) {
+                        min = a[i];
+                        index = i;
                     }
                 }
+                System.out.println(index);
             }
-
         }
     }
 
