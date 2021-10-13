@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class biggestIndex {
     public static void main(String args[]) throws IOException {
         Scanner sc = new Scanner(System.in);
-        int k, l, t, count = 0;
+        int k, l, t;
         t = sc.nextInt();
         while (t-- != 0) {
             k = sc.nextInt();
@@ -14,24 +14,14 @@ public class biggestIndex {
                 l = sc.nextInt();
                 a[i] = l;
             }
-            for (int y = 0; y < k; y++) {
-                if (a[y] == 0) {
-                    count = count + 1;
-                }
-            }
-            if (count != k) {
-                for (int i = 0; i < k; i++) {
-                    if (a[i] == 1)
-                        b[i] = 1;
-                }
-                for (int i = k - 1; i >= 0; i--) {
-                    if (b[i] == 1)
-                        System.out.print(i);
+            int lastIndex = -1;
+            for (int y = a.length - 1; y >= 0; y--) {       //0 0 0 1 0 1 1 0
+                if (a[y] == 1) {
+                    lastIndex = y;
                     break;
                 }
-            }else{
-                System.out.print(-1);
             }
+            System.out.println(lastIndex);
         }
     }
 }
