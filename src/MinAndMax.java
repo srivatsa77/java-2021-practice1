@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class minAndMax {
+public class MinAndMax {
     public static void main(String args[]) throws IOException {
 
         Scanner sc = new Scanner(System.in);

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class cleanUp {
+public class CleanUp {
     public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
     int n,m,k,t;    //m-finished jobs,n-total jobs,t-testcases

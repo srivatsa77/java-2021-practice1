@@ -1,6 +1,6 @@
   import java.util.*;
   import java.io.*;
-    public class comparingNums {
+    public class ComparingNums {
         public static void main(String args[]) throws IOException {
             Scanner sc = new Scanner(System.in);
             int t, n, k, l;

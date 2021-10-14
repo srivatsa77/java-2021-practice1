@@ -1,7 +1,7 @@
     import java.util.*;
   import java.io.*;
 
-    public class findMinimum {
+    public class FindMinimum {
         public static void main(String args[]) throws IOException {
 
 

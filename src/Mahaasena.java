@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class mahaasena {
+public class Mahaasena {
     public static void main (String[] args){
         Scanner sc=new Scanner(System.in);
         int n, lucky=0, unlucky=0;

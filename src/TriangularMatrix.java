@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class triangularMatrix {
+public class TriangularMatrix {
     public static void main(String args[]) throws IOException {
         Scanner sc = new Scanner(System.in);
         int n, m, l, t;
