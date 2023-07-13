@@ -35,17 +35,16 @@ public class Solution {
             }
             for(int i=0; i<m; i++){
                 for(int j=0; j<n; j++) {
-                    if (a[i][j] == 0) {
-                    for(int k=0;k<m;k++){            //travel row
+                    if (sam[i][j] == 0) {
+                    for(int k=0;k<n;k++){            //travel row
                         a[i][k]=0;
                     }
-                    break;
                     }
                 }
             }
             for(int i=0; i<m; i++){
                 for(int j=0; j<n; j++) {
-                    if (a[i][j] == 0) {
+                    if (sam[i][j] == 0) {
                         for(int k=0;k<m;k++){            //travel col
                             a[k][j]=0;
                         }
@@ -53,11 +52,16 @@ public class Solution {
                 }
             }
 
-
+            for(int i=0; i<m; i++){
+                for(int j=0; j<n; j++){         //sam=0forall a=0
+                    if(a[i][j]==0){
+                        sam[i][j]=0;
+                    }
+                }}
             for(int x=0; x<m; x++){
                 System.out.println();
                 for(int y=0; y<n; y++){
-                    System.out.print(a[x][y]);
+                    System.out.print(sam[x][y]);
                 }
             }
         }
